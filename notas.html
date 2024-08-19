@@ -1,0 +1,19 @@
+<script>
+let valor = 350;
+        let notas100 = Math.floor(valor / 100);
+        valor %= 100;
+        let notas50 = Math.floor(valor / 50);
+        valor %= 50;
+        let notas20 = Math.floor(valor / 20);
+        valor %= 20;
+        let notas10 = Math.floor(valor / 10);
+        valor %= 10;
+        let notas5 = Math.floor(valor / 5);
+
+        document.write(`<h3>Cálculo de Notas</h3>`);
+        document.write(`<p>Notas de 100: ${notas100}</p>`);
+        document.write(`<p>Notas de 50: ${notas50}</p>`);
+        document.write(`<p>Notas de 20: ${notas20}</p>`);
+        document.write(`<p>Notas de 10: ${notas10}</p>`);
+        document.write(`<p>Notas de 5: ${notas5}</p>`);
+    </script>

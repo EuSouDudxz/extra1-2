@@ -1,0 +1,13 @@
+<script>
+  let valorInicial = 100;
+        let taxaJuro = 0.12; // 12%
+        let meses = 6;
+
+        let valorFinal = valorInicial;
+        for (let i = 1; i <= meses; i++) {
+            valorFinal += valorFinal * taxaJuro;
+        }
+
+        document.write(`<h3>Cálculo de Juro Composto</h3>`);
+        document.write(`<p>Valor final após ${meses} meses com juro de ${taxaJuro * 100}% ao mês sobre R$ ${valorInicial.toFixed(2)}: R$ ${valorFinal.toFixed(2)}</p>`);
+    </script>
